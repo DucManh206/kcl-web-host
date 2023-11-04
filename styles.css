@@ -1,0 +1,161 @@
+/* styles.css */
+
+/* Reset CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #4285f4;
+    color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+}
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.menu-btn {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.bar.active {
+    background-color: transparent;
+    transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+/* Navbar Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4285f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-mode-btn {
+    cursor: pointer;
+    width: 40px; /* Điều chỉnh kích thước mong muốn */
+    height: 40px; /* Điều chỉnh kích thước mong muốn */
+}
+
+.toggle-mode-btn img {
+    width: 100%;
+    height: auto;
+}
+
+/* Animation for Navbar */
+.navbar {
+    max-height: 70px; /* Set the maximum height as per your design */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+/* Three Columns Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px; /* Add space between the menu and the blocks */
+}
+
+.introduction, .services, .about-us {
+    width: calc(30% - 20px); /* Adjust the width of the blocks */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.introduction:hover, .services:hover, .about-us:hover {
+    transform: scale(1.05);
+}
+
+/* Night Mode Styling */
+body.dark-mode {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #444;
+}
+
+.dark-mode footer {
+    background-color: #333;
+}
+
+.dark-mode .introduction, .dark-mode .services, .dark-mode .about-us {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.logo-container img {
+    width: 50px; /* Adjust the value based on your desired size */
+    height: auto;
+    display: block;
+}
+/* Footer Styles */
+.footer {
+    background-color: #4285f4;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ... (other CSS rules) ... */
