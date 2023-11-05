@@ -1,12 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Simulate loading time
-    setTimeout(function() {
+    setTimeout(function () {
         // Redirect to the main page
         window.location.href = "main.html";
     }, 3000); // 3000 milliseconds (3 seconds) as an example
-});
 
-document.addEventListener("DOMContentLoaded", function () {
     // Kiểm tra chiều rộng màn hình khi trang web được tải
     checkScreenWidth();
 
