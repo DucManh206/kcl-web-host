@@ -13,8 +13,8 @@
 }
 
 .loading {
-    width: 30%;
-    height: 30%;
+    width: 100px;
+    height: 100px;
     background-image: url('/img/favicon.png');
     background-size: cover;
     animation: moveCloud 2s linear infinite;
