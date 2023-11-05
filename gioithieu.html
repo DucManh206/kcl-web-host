@@ -9,8 +9,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <!-- Thêm đoạn mã từ file index.html tại đây nếu bạn muốn giữ lại header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo-title-container">
+                <div class="logo-container">
+                    <img src="/img/logo.png" alt="KatariCloud Logo">
+                </div>
+                <h1>KatariCloud</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Dịch Vụ</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <div class="toggle-mode-btn" onclick="toggleDarkMode()" title="Chuyển đổi Chế độ Sáng/Tối">
+                        <img src="/img/toggle-icon.png" alt="Toggle Mode">
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <main class="container">
@@ -25,8 +42,10 @@
         </section>
     </main>
 
-    <footer>
-        <!-- Thêm đoạn mã từ file index.html tại đây nếu bạn muốn giữ lại footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 KatariCloud. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

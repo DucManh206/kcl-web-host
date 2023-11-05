@@ -150,6 +150,7 @@ body.dark-mode {
     height: auto;
     display: block;
 }
+
 /* Footer Styles */
 .footer {
     background-color: #4285f4;
@@ -159,3 +160,30 @@ body.dark-mode {
 }
 
 /* ... (other CSS rules) ... */
+/* Thêm vào cuối file styles.css */
+
+/* Your existing CSS styles here */
+
+/* Phần CSS cho thiết bị di động (điện thoại) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Chuyển sang layout dọc */
+    }
+
+    .introduction, .services, .about-us {
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+    }
+
+    /* Thêm các điều chỉnh khác nếu cần */
+}
+
+/* Phần CSS cho máy tính */
+@media (min-width: 769px) {
+    .container {
+        flex-direction: row; /* Giữ nguyên layout ngang */
+    }
+
+    .introduction, .services, .about-us {
+        width: calc(30% - 20px);
+    }
+}
