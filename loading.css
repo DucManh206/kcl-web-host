@@ -15,7 +15,7 @@
 .loading {
     width: 100px;
     height: 100px;
-    background-image: url('cloud.png');
+    background-image: url('/img/logo.png');
     background-size: cover;
     filter: brightness(2); /* Điều chỉnh độ sáng của đám mây */
     animation: moveCloud 4s linear infinite, glow 2s ease-in-out infinite; /* Thêm hiệu ứng sáng lung linh */
