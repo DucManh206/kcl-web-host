@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(52, 152, 219, 0.5); /* Màu xanh da trời với độ trong suốt và độ tối hơn */
+    background-color: #1a1a1a; /* Màu nền tối */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,9 +15,10 @@
 .loading {
     width: 100px;
     height: 100px;
-    background-image: url('/img/logo.png');
+    background-image: url('cloud.png');
     background-size: cover;
-    animation: moveCloud 4s linear infinite;
+    filter: brightness(2); /* Điều chỉnh độ sáng của đám mây */
+    animation: moveCloud 4s linear infinite, glow 2s ease-in-out infinite; /* Thêm hiệu ứng sáng lung linh */
 }
 
 @keyframes moveCloud {
@@ -26,5 +27,14 @@
     }
     50% {
         transform: translateX(100%);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        filter: brightness(2); /* Đảm bảo giữ nguyên độ sáng ở hai đầu của chu kỳ */
+    }
+    50% {
+        filter: brightness(5); /* Điều chỉnh độ sáng cao nhất ở giữa chu kỳ */
     }
 }
