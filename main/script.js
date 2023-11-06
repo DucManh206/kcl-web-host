@@ -83,3 +83,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const typingText = document.getElementById("typing-text");
+    const learnMoreBtnContainer = document.getElementById("learn-more-btn-container");
+
+    const textToType = "Nhanh chóng, Tiện lợi, Trực quan";
+    let index = 0;
+
+    function typeText() {
+        if (index < textToType.length) {
+            typingText.innerHTML += textToType.charAt(index);
+            index++;
+            setTimeout(typeText, 100);
+        } else {
+            // Hiển thị nút "Learn More" khi chữ đã gõ xong
+            learnMoreBtnContainer.style.opacity = 1;
+        }
+    }
+
+    // Bắt đầu gõ chữ khi trang web được tải
+    typeText();
+});
+
+function handleLearnMoreClick() {
+    alert("test done");
+    // Thêm xử lý khi nút "Learn More" được click
+}

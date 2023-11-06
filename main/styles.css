@@ -12,13 +12,6 @@ h1 {
     margin: 0;
 }
 
-.welcome {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    text-align-last: auto;
-    text-align: center;
-}
-
 h2 {
     text-align: center;
 }
@@ -189,4 +182,44 @@ body.dark-mode {
     .introduction, .services, .about-us {
         width: calc(30% - 35px);
     }
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+#typing-text-container {
+    text-align: center;
+}
+
+#typing-text {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    display: inline-block;
+}
+
+#learn-more-btn-container {
+    opacity: 0; /* Ẩn nút "Learn More" ban đầu */
+    transition: opacity 0.5s ease-in-out;
+    margin-top: 0px;
+}
+
+#learn-more-btn-container button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#learn-more-btn-container button:hover {
+    background-color: #2980b9;
 }
