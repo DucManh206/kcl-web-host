@@ -1,20 +1,13 @@
-/* styles.css */
-
-/* Reset CSS */
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #efefef;
-    transition: background-color 0,6s, color 0,6s;
+    transition: background-color 0.6s, color 0.6s;
 }
 
-h1 {
+h1, h2 {
     margin: 0;
-}
-
-h2 {
-    text-align: center;
 }
 
 .container {
@@ -22,7 +15,6 @@ h2 {
     margin: 0 auto;
 }
 
-/* Header Styles */
 header {
     background-color: #4285f4;
     color: #ffffff;
@@ -34,11 +26,6 @@ header {
     display: flex;
     align-items: center;
 }
-
-.logo-container {
-    margin-right: 10px;
-}
-
 
 .menu-btn {
     cursor: pointer;
@@ -62,7 +49,6 @@ header {
     transform: rotate(-45deg) translate(-6px, 5px);
 }
 
-/* Navbar Styles */
 nav ul {
     list-style: none;
     padding: 0;
@@ -87,35 +73,15 @@ nav a:hover {
     color: #000000;
 }
 
-.navbar {
-    display: -webkit-flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.toggle-mode-btn {
-    cursor: pointer;
-    width: 40px; /* Điều chỉnh kích thước mong muốn */
-    height: 40px; /* Điều chỉnh kích thước mong muốn */
-}
-
-.toggle-mode-btn img {
-    width: 100%;
-    height: auto;
-}
-
-
-
-/* Three Columns Layout */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 10px; /* Add space between the menu and the blocks */
+    margin-top: 10px;
 }
 
 .introduction {
-    width: calc(30% - 20px); /* Adjust the width of the blocks */
+    width: calc(30% - 20px);
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -128,17 +94,12 @@ nav a:hover {
     transform: scale(1.025);
 }
 
-/* Night Mode Styling */
 body.dark-mode {
     background-color: #2d2d2d;
     color: #ffffff;
 }
 
-.dark-mode header {
-    background-color: #3d3d3d;
-}
-
-.dark-mode footer {
+.dark-mode header, .dark-mode footer {
     background-color: #3d3d3d;
 }
 
@@ -148,12 +109,11 @@ body.dark-mode {
 }
 
 .logo-container img {
-    width: 50px; /* Adjust the value based on your desired size */
+    width: 50px;
     height: auto;
     display: block;
 }
 
-/* Footer Styles */
 .footer {
     background-color: #4285f4;
     color: #ffffff;
@@ -161,23 +121,19 @@ body.dark-mode {
     text-align: center;
 }
 
-/* Phần CSS cho thiết bị di động (điện thoại) */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Chuyển sang layout dọc */
+        flex-direction: column;
     }
 
     .introduction {
-        width: 90%; /* Chiếm toàn bộ chiều rộng */
+        width: 90%;
     }
-
-    /* Thêm các điều chỉnh khác nếu cần */
 }
 
-/* Phần CSS cho máy tính */
 @media (min-width: 769px) {
     .container {
-        flex-direction: row; /* Giữ nguyên layout ngang */
+        flex-direction: row;
     }
 
     .introduction {
@@ -206,7 +162,7 @@ body.dark-mode {
 }
 
 #learn-more-btn-container {
-    opacity: 0; /* Ẩn nút "Learn More" ban đầu */
+    opacity: 0;
     transition: opacity 1s ease-in-out;
     margin-top: 20px;
 }
