@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (index < textToType.length) {
             typingText.innerHTML += textToType.charAt(index);
             index++;
-            setTimeout(typeText, 100);
+            setTimeout(typeText, 36);
         } else {
             // Hiển thị nút "Learn More" khi chữ đã gõ xong
             learnMoreBtnContainer.style.opacity = 1;
@@ -108,6 +108,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function handleLearnMoreClick() {
-    alert("test done");
-    // Thêm xử lý khi nút "Learn More" được click
+    // Lấy đối tượng HTML của phần content
+    const contentSection = document.getElementById("content");
+
+    // Sử dụng smooth-scroll để cuộn màn hình một cách từ từ
+    const scroll = new SmoothScroll();
+    scroll.animateScroll(contentSection, null, { easing: 'easeInOutQuart', speed: 800 });
 }
