@@ -115,3 +115,4 @@ function handleLearnMoreClick() {
     const scroll = new SmoothScroll();
     scroll.animateScroll(contentSection, null, { easing: 'easeInOutQuart', speed: 2800 });
 }
+

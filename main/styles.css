@@ -114,7 +114,7 @@ nav a:hover {
     margin-top: 10px; /* Add space between the menu and the blocks */
 }
 
-.introduction, .services, .about-us {
+.introduction {
     width: calc(30% - 20px); /* Adjust the width of the blocks */
     margin-bottom: 20px;
     padding: 20px;
@@ -124,7 +124,7 @@ nav a:hover {
     transition: transform 0.3s ease-in-out, background-color 0.3s;
 }
 
-.introduction:hover, .services:hover, .about-us:hover {
+.introduction:hover {
     transform: scale(1.025);
 }
 
@@ -142,7 +142,7 @@ body.dark-mode {
     background-color: #3d3d3d;
 }
 
-.dark-mode .introduction, .dark-mode .services, .dark-mode .about-us {
+.dark-mode .introduction {
     background-color: #333333;
     color: #ffffff;
 }
@@ -167,7 +167,7 @@ body.dark-mode {
         flex-direction: column; /* Chuyển sang layout dọc */
     }
 
-    .introduction, .services, .about-us {
+    .introduction {
         width: 90%; /* Chiếm toàn bộ chiều rộng */
     }
 
@@ -180,7 +180,7 @@ body.dark-mode {
         flex-direction: row; /* Giữ nguyên layout ngang */
     }
 
-    .introduction, .services, .about-us {
+    .introduction {
         width: calc(30% - 35px);
     }
 }
