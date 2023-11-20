@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="KatariCloud - Đối tác tin cậy cho các dịch vụ máy chủ chất lượng">
     <link rel="icon" href="/img/favicon.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chủ - KatariCloud</title>
@@ -16,12 +17,19 @@
                 </div>
                 <h1>KatariCloud</h1>
             </div>
-            <nav>
+            <!-- Thêm thanh menu ngang -->
+            <nav class="main-menu">
                 <ul>
                     <li><a href="minecraft.html">Minecraft Host</a></li>
                     <li><a href="website.html">Web Host</a></li>
                     <li><a href="#">Liên Hệ</a></li>
-                    <div class="toggle-mode-btn" onclick="toggleDarkMode()" title="Chuyển đổi Chế độ Sáng/Tối">
+                </ul>
+            </nav>
+            <!-- Kết thúc thanh menu ngang -->
+            <nav>
+                <ul>
+                    <!-- Di chuyển toggle-mode-btn vào thanh menu ngang -->
+                    <li class="toggle-mode-btn" onclick="toggleDarkMode()" title="Chuyển đổi Chế độ Sáng/Tối">
                         <img src="/img/toggle-icon.png" alt="Toggle Dark Mode">
                     </li>
                 </ul>
@@ -70,4 +78,3 @@
     <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
 </body>
 </html>
-    

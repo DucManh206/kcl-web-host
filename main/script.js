@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
     // Check and apply dark mode from Local Storage
     var isDarkMode = localStorage.getItem("darkMode") === "true";
     if (isDarkMode) {
@@ -36,12 +36,24 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(typeText, 36);
         } else {
             // Show "Learn More" button when text is typed
-            learnMoreBtnContainer.style.opacity = 1;
+            if (learnMoreBtnContainer) {
+                learnMoreBtnContainer.style.opacity = 1;
+            }
         }
     }
 
     // Start typing when the webpage is loaded
     typeText();
+
+    // Mobile menu toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function () {
+            mobileMenu.classList.toggle('open');
+        });
+    }
 });
 
 function toggleDarkMode() {
@@ -74,12 +86,14 @@ function checkScreenWidth() {
     var isMobile = window.innerWidth <= 768;
     var body = document.body;
 
-    if (isMobile) {
-        body.classList.add("mobile-view");
-        body.classList.remove("desktop-view");
-    } else {
-        body.classList.remove("mobile-view");
-        body.classList.add("desktop-view");
+    if (body) {
+        if (isMobile) {
+            body.classList.add("mobile-view");
+            body.classList.remove("desktop-view");
+        } else {
+            body.classList.remove("mobile-view");
+            body.classList.add("desktop-view");
+        }
     }
 }
 
