@@ -3,5 +3,5 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         // Redirect to the main page
         window.location.href = "/main/main.html";
-    }, 2000); // 3000 milliseconds (3 seconds) as an example
+    }, 1500); // 3000 milliseconds (3 seconds) as an example
 });
